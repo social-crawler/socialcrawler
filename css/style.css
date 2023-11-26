@@ -52,8 +52,8 @@ a, a:hover {
 }
 
 .hero {
-  padding-top: 275px;
-  padding-bottom: 300px;
+  padding-top: 125px;
+  padding-bottom: 150px;
   width: 100%;
 }
 
@@ -80,7 +80,7 @@ a, a:hover {
 }
 
 .section {
-  margin-bottom: 300px;
+  margin-bottom: 150px;
 }
 
 .section-content {
@@ -111,7 +111,12 @@ header {
 }
 
 @media (min-width: 768px) {
-  header {
+  .hero {
+    padding-bottom: 300px !important;
+    padding-top: 275px !important;
+  }
+  .section {
+    margin-bottom: 250px!important;
   }
 }
 
