@@ -67,6 +67,14 @@ a, a:hover {
   font-size: 45px;
 }
 
+.contact-us-form label, input, textarea {
+  width: 100%;
+}
+
+.submit-contact-button {
+  font-weight: 600;
+}
+
 .hero-subtitle {
   color: #212529;
   font-size: 25px;

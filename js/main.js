@@ -55,4 +55,9 @@ function getScroll() {
 
 $(document).ready(function() {
 	$(window).scroll(getScroll);
+
 });
+
+function showContactModal() {
+	$("#contactUsMain").modal('show')
+}

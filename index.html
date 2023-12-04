@@ -19,6 +19,17 @@
     <link rel="stylesheet" href="css/fadein.css">
 
     <title>Social Crawler</title>
+    <!-- Hotjar Tracking Code for https://social-crawler.github.io/socialcrawler/ -->
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:3776072,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
   </head>
   <body>
 
@@ -52,7 +63,7 @@
             </ul>
 
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item cta-btn">
+              <li class="nav-item cta-btn" onclick="showContactModal()">
                 <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
@@ -75,7 +86,9 @@
                   Discover our affordable and user-friendly tool for extracting valuable insights from Twitter. 
                   Analyze trends, track engagement, and more with Social Crawler.
                 </p>
-                <a href="#" class="btn btn-primary hero-cta">CONTACT US</a>
+                <a href="#" class="btn btn-primary hero-cta" onclick="showContactModal()">
+                  CONTACT US
+                </a>
               </div>
             </div>
           </div>
@@ -118,6 +131,51 @@
                 <img src="images/posts.png" class="img img-fluid" alt="Twitter Data Tool Image">
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="contactUsMain" tabindex="-1" role="dialog" aria-labelledby="contactUsMain" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              What are you trying to achieve with Social Crawler?
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form
+              class="form contact-us-form"
+              action="https://formspree.io/f/xeqbbyvo"
+              method="POST"
+            >
+              <label>
+                Your email:
+                <br/>
+                <input required type="email" name="email">
+              </label>
+              <br/>
+              <label>
+                Your name:
+                <br/>
+                <input required type="text" name="name">
+              </label>
+              <br/>
+              <label>
+                Your answer:
+                <br/>
+                <textarea required name="message"></textarea>
+              </label>
+              <br/>
+              <!-- your other form fields go here -->
+              <div class="w-100 d-flex justify-content-center">
+                <button class="btn btn-outline-dark submit-contact-button" type="submit">Send message</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
