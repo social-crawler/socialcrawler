@@ -59,5 +59,16 @@ $(document).ready(function() {
 });
 
 function showContactModal() {
+	gtag('event', 'button_click', {
+		'event_category': 'Button Click',
+		'event_label': 'Contact Us'
+	});
 	$("#contactUsMain").modal('show')
 }
+
+document.getElementById('contact-us-form').addEventListener('submit', function() {
+	gtag('event', 'form_submit', {
+	  'event_category': 'Form Submit',
+	  'event_label': 'Contact Us'
+	});
+});
